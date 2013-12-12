@@ -1,6 +1,19 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public int[]  swapEnds(int[] nums) {
+  int[] backnum = new int[nums.length];
+  for (int x=0;x<nums.length;x++)
+  {
+  backnum[x]=nums[x];
+  }
+  backnum[0]=nums[nums.length-1];
+  backnum[nums.length-1]=nums[0];
+  return backnum;
+//for reverse
+/*
+int up=0;
+for (int down=(nums.length-1);0<=down; down--)
+  {
+  backnum[up]=nums[down];
+  up++;
+  }
+*/
+}
